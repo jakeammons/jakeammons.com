@@ -1,0 +1,7 @@
+name: My Jekyll Website
+
+collections_dir: collections
+
+collections:
+  projects:
+    output: true

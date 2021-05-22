@@ -1,0 +1,17 @@
+---
+title: Projects
+layout: default
+---
+These are some of the projects I've worked on.
+<div class="row">
+{% for project in site.projects %}
+    <div class="col-md-4 card m-3">
+        <div class="card-body">
+            <h4 class="card-title">{{ project.name }}</h4>
+            <h6 class="card-subtitle mb-2 text-muted">{{ project.year }}</h6>
+            <p class="card-text">{{ project.description }}</p>
+            <a href="{{ project.url }}" class="card-link">Read More</a>
+        </div>
+    </div>
+{% endfor %}
+</div>

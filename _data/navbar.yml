@@ -1,0 +1,12 @@
+title: Jake Ammons
+home: /
+items:
+
+- title: About
+  url: /about.html
+
+- title: Projects
+  url: /projects.html
+
+- title: Contact
+  url: /contact.html
