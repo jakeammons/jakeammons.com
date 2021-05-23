@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand text-warning" 
-           href="{{ site.data.navbar.home }}">
+        <a class="navbar-brand text-danger" 
+           href="{{ site.data.navbar.home | relative_url }}">
             {{ site.data.navbar.title }}
         </a>
         <button class="navbar-toggler collapsed" type="button" 
@@ -13,7 +13,7 @@
                 {% for item in site.data.navbar.items %}
                     <li class="nav-item">
                         <a class="nav-link {% if item.url == page.url %}active{% endif %}" 
-                           href="{{ item.url }}">
+                           href="{{ item.url | relative_url }}">
                             {{ item.title }}
                         </a>
                     </li>

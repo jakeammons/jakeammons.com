@@ -1,7 +1,15 @@
 name: My Jekyll Website
+baseurl: /redesign
 
 collections_dir: collections
 
 collections:
   projects:
     output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"

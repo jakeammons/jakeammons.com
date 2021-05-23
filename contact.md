@@ -1,7 +1,8 @@
 ---
 title: Contact
-layout: default
 ---
+# Contact
 
-- jake@jakeammons.com
-- Jake Ammons on LinkedIn
+Email: jake (at) jakeammons (dot) com
+
+LinkedIn: [www.linkedin.com/in/jakeammons](https://www.linkedin.com/in/jakeammons)
