@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+	<title>Robotic Sink</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://www.jakeammons.com/style.css" rel="stylesheet" type="text/css" />
+	<link rel="apple-touch-icon" sizes="180x180" href="https://www.jakeammons.com/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://www.jakeammons.com/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://www.jakeammons.com/favicon-16x16.png">
+	<link rel="manifest" href="https://www.jakeammons.com/site.webmanifest">
+	<link rel="mask-icon" href="https://www.jakeammons.com/safari-pinned-tab.svg" color="#dc3522">
+	<meta name="msapplication-TileColor" content="#1e1e20">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<section class="first">
+<div class="content">
+<h1><a href="https://www.jakeammons.com">Jake Ammons</a></h1>
+<h2 id="menu"><a href="https://www.jakeammons.com/about"><u>About</u></a> <a href="https://www.jakeammons.com/resume"><u>Resume</u></a> <a href="https://www.jakeammons.com/projects"><u>Projects</u></a> <a href="https://www.jakeammons.com/contact"><u>Contact</u></a></h2>
+<a href="..">&lt--- Back to Projects</a>
+<h3>Robotic Sink</h3>
+<ul>
+	<li>This project was designed and built in four weeks for ECE 8680: Architectural Robotics at Clemson University.</li>
+	<li>I designed a sink faucet that uses a standard vinyl hose as a <a href="https://en.wikipedia.org/wiki/Snake-arm_robot">continuum manipulator</a>. Motors at the base of the faucet adjust the lengths of three tendons that pass through the pipe to the end of the hose. This version of the sink is controlled with a simple wired joystick.</li>
+	<li>The purpose of this project is partly to explore how a sink could help someone in a kitchen. Another purpose is to explore moving fluids through a continuum manipulator for <a href="https://www.jakeammons.com/projects/concrete_printing">upcoming research</a>.</li>
+	<li>The tendon strings pass through collars along the length of the hose. The collars are 3D printed and adhered to the hose with Loctite Vinyl adhesive.</li>
+	<li>The inlet of the hose is connected to a solenoid valve which in turn is connected to a garden hose. The hose passes through a custom-bent PVC pipe and is secured at the end to prevent rotation inside the pipe.</li>
+	<li>The PVC pipe was bent using <a href="https://youtu.be/p1SMOPaajgY">this method</a> where hot sand is poured into the pipe. The sand softens the PVC and supports it as it is bent into the desired shape using a jig. This helps to prevent kinking in the pipe.</li>
+	<li>The base of the tendon strings are attached to capstans (winches) that spool and unspool the strings to change the lengths of the tendons.</li>
+	<li>The three tendon <a href="https://www.pololu.com/product/4741">motors</a> are driven by three <a href="https://www.cytron.io/p-10amp-5v-30v-dc-motor-driver">DC motor drivers</a> which are in turn controlled by an <a href="https://www.microchip.com/wwwproducts/en/ATmega2560">ATmega2560</a>.</li>
+	<li>For now, instead of using proper <a href="https://ieeexplore.ieee.org/abstract/document/8977333">continuum kinematics</a>, I faked it by interpolating between tendon lengths. I projected the input vector from the joystick onto each of three tendon length output vectors where each output vector is rotated 120&deg.</li>
+	<li>Future research may include adding computer vision, flow measurement, and interoperability with other assistive robots.</li>
+</ul>
+<br>
+<br>
+<iframe width="480" height="270" style="border:none;" allowfullscreen
+	src="https://www.youtube.com/embed/CsArAVq8Klc?autoplay=1&mute=1&loop=1">
+</iframe>
+<a href="media/water_test.mp4 ">
+	<video width="480" height="270" controls autoplay muted loop>
+		<source src="media/water_test.mp4" type="video/mp4">
+		Your browser does not support this video.
+	</video>
+</a>
+<a href="media/range_test.mp4 ">
+	<video width="480" height="270" controls autoplay muted loop>
+		<source src="media/range_test.mp4" type="video/mp4">
+		Your browser does not support this video.
+	</video>
+</a>
+<a href="media/joystick_test.mp4 ">
+	<video width="270" height="480" controls autoplay muted loop>
+		<source src="media/joystick_test.mp4" type="video/mp4">
+		Your browser does not support this video.
+	</video>
+</a>
+<a href="media/final_sink.jpg"><img src="media/final_sink.jpg"></a>
+<a href="media/final_sink_hose.jpg"><img src="media/final_sink_hose.jpg"></a>
+<a href="media/capstans_motors_closeup.jpg"><img src="media/capstans_motors_closeup.jpg"></a>
+<a href="media/hose_build.jpg"><img src="media/hose_build.jpg"></a>
+<a href="media/hose_tendons.jpg"><img src="media/hose_tendons.jpg"></a>
+<a href="media/hose.jpg"><img src="media/hose.jpg"></a>
+<a href="media/capstan.jpg"><img src="media/capstan.jpg"></a>
+<a href="media/motor_mount.jpg"><img src="media/motor_mount.jpg"></a>
+<a href="media/motor_assembly.jpg"><img src="media/motor_assembly.jpg"></a>
+<a href="media/sink_back.jpg"><img src="media/sink_back.jpg"></a>
+<a href="media/pipe_clamp_top.jpg"><img src="media/pipe_clamp_top.jpg"></a>
+<a href="media/pipe_clamp_bottom.jpg"><img src="media/pipe_clamp_bottom.jpg"></a>
+<a href="media/bending_jig.jpg"><img src="media/bending_jig.jpg"></a>
+<a href="media/joystick.jpg"><img src="media/joystick.jpg"></a>
+</div>
+</section>
+</body>
+</html>
